@@ -29,7 +29,7 @@ class JFPresentationController: UIPresentationController {
         
         UIView.animate(withDuration: 0.5, animations: {
             self.closeButton.alpha = 1.0
-            self.closeButton.imageView?.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI) - 0.01)
+            self.closeButton.imageView?.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi) - 0.01)
         })
         
         NotificationCenter.default.post(name: Notification.Name(rawValue: SettingViewControllerWillPresent), object: nil)

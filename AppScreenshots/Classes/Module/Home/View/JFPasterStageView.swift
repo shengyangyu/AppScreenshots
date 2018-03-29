@@ -83,7 +83,7 @@ class JFPasterStageView: UIView {
     }
     
     /// 点击了背景
-    func backgroundClicked(btBg: UIButton) {
+    @objc func backgroundClicked(btBg: UIButton) {
         clearAllOnFirst()
         delegate?.didTappedBgView()
     }

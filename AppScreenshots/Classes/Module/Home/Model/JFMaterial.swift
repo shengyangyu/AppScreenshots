@@ -9,7 +9,7 @@
 import UIKit
 
 /// 素材参数
-class JFMaterialParameter: NSObject, NSCopying {
+@objcMembers class JFMaterialParameter: NSObject, NSCopying {
     
     /// 展示图名称
     var showImageName: String?
@@ -141,7 +141,7 @@ class JFMaterialParameter: NSObject, NSCopying {
 }
 
 /// 素材
-class JFMaterial: NSObject {
+@objcMembers class JFMaterial: NSObject {
     
     /// 推荐类型 0 最新 1最热
     var commendType: Int = 0

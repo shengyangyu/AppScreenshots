@@ -2837,8 +2837,6 @@
 			isa = PBXGroup;
 			children = (
 				B2B769991E4DAC970089F276 /* Controller */,
-				B2B7699A1E4DAC970089F276 /* Model */,
-				B2B7699B1E4DAC970089F276 /* View */,
 			);
 			path = Feature;
 			sourceTree = "<group>";
@@ -2849,20 +2847,6 @@
 				B2B7699C1E4DACAF0089F276 /* JFNewFeatureViewController.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		B2B7699A1E4DAC970089F276 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		B2B7699B1E4DAC970089F276 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		CB335BEBD65DED562C879333 /* Pods */ = {
@@ -2910,7 +2894,7 @@
 				TargetAttributes = {
 					B24BB3AD1E4198920024CBB2 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 35PE24U644;
+						DevelopmentTeam = Z5XTYM6CQ3;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -3959,29 +3943,19 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = 35PE24U644;
+				DEVELOPMENT_TEAM = Z5XTYM6CQ3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/AppScreenshots/Classes/Vendor/UMSocial/SocialLibraries/QQ",
-					"$(PROJECT_DIR)/AppScreenshots/Classes/Vendor/UMSocial/UMSocialSDK",
-					"$(PROJECT_DIR)/AppScreenshots/Classes/Vendor/UMSocial/UMSocialUI",
 					"$(PROJECT_DIR)/AppScreenshots/Classes/Vendor",
 				);
 				INFOPLIST_FILE = AppScreenshots/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/AppScreenshots/Classes/Vendor/UMSocial/SocialLibraries/QQ",
-					"$(PROJECT_DIR)/AppScreenshots/Classes/Vendor/UMSocial/SocialLibraries/Sina",
-					"$(PROJECT_DIR)/AppScreenshots/Classes/Vendor/UMSocial/SocialLibraries/TencentWeibo",
-					"$(PROJECT_DIR)/AppScreenshots/Classes/Vendor/UMSocial/SocialLibraries/UniqueId",
-					"$(PROJECT_DIR)/AppScreenshots/Classes/Vendor/UMSocial/SocialLibraries/WeChat",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = cn.6ag.AppScreenshots;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.yangsheng.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = AppScreenshots/Classes/Application/BridgeHeader.h;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -3993,29 +3967,19 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = 35PE24U644;
+				DEVELOPMENT_TEAM = Z5XTYM6CQ3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/AppScreenshots/Classes/Vendor/UMSocial/SocialLibraries/QQ",
-					"$(PROJECT_DIR)/AppScreenshots/Classes/Vendor/UMSocial/UMSocialSDK",
-					"$(PROJECT_DIR)/AppScreenshots/Classes/Vendor/UMSocial/UMSocialUI",
 					"$(PROJECT_DIR)/AppScreenshots/Classes/Vendor",
 				);
 				INFOPLIST_FILE = AppScreenshots/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/AppScreenshots/Classes/Vendor/UMSocial/SocialLibraries/QQ",
-					"$(PROJECT_DIR)/AppScreenshots/Classes/Vendor/UMSocial/SocialLibraries/Sina",
-					"$(PROJECT_DIR)/AppScreenshots/Classes/Vendor/UMSocial/SocialLibraries/TencentWeibo",
-					"$(PROJECT_DIR)/AppScreenshots/Classes/Vendor/UMSocial/SocialLibraries/UniqueId",
-					"$(PROJECT_DIR)/AppScreenshots/Classes/Vendor/UMSocial/SocialLibraries/WeChat",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = cn.6ag.AppScreenshots;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.yangsheng.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = AppScreenshots/Classes/Application/BridgeHeader.h;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

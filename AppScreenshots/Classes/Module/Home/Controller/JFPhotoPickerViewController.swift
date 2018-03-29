@@ -159,7 +159,7 @@ class JFPhotoPickerViewController: UIViewController {
     /// 更新标题显示
     fileprivate func updateTitle() {
         titleButton.setTitle("(\(selectedCount)/5) \(currentAlbumItem?.title ?? "")", for: .normal)
-        let size = ("(\(selectedCount)/5) \(currentAlbumItem?.title ?? "")" as NSString).boundingRect(with: CGSize.zero, options: [], attributes: [NSFontAttributeName : UIFont.systemFont(ofSize: layoutFont(iPhone6: 17))], context: nil).size
+        let size = ("(\(selectedCount)/5) \(currentAlbumItem?.title ?? "")" as NSString).boundingRect(with: CGSize.zero, options: [], attributes: [NSAttributedStringKey.font : UIFont.systemFont(ofSize: layoutFont(iPhone6: 17))], context: nil).size
         titleButton.imageEdgeInsets = UIEdgeInsets(
             top: 0,
             left: (SCREEN_WIDTH - layoutHorizontal(iPhone6: 150) - size.width) * 0.5 + size.width,

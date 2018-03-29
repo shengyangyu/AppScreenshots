@@ -40,7 +40,7 @@ class JFAppStoreApp: NSObject {
             guard let currentVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String,
                 let serverVersion = app.version,
                 currentVersion == serverVersion else {
-                    log("正在审核新版本中 currentVersion = \(Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String) serverVersion = \(app.version)")
+                    log("正在审核新版本中 currentVersion = \(String(describing: Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String)) serverVersion = \(String(describing: app.version))")
                     finished(app, true)
                 return
             }

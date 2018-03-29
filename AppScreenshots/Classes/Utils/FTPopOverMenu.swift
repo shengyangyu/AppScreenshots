@@ -435,7 +435,6 @@ private class FTPopOverMenuView: UIControl {
         backgroundLayer.strokeColor = configuration.borderColor.cgColor
         backgroundLayer.lineWidth = configuration.borderWidth
         self.layer.insertSublayer(backgroundLayer, at: 0)
-        //        backgroundLayer.transform = CATransform3DMakeAffineTransform(CGAffineTransform(rotationAngle: CGFloat(M_PI))) //CATransform3DMakeRotation(CGFloat(M_PI), 1, 1, 0)
     }
     
     func getBackgroundPath(arrowPoint : CGPoint) -> UIBezierPath {
@@ -451,26 +450,26 @@ private class FTPopOverMenuView: UIControl {
             path.addLine(to: CGPoint(x: self.bounds.size.width - radius, y: FTDefaultMenuArrowHeight))
             path.addArc(withCenter: CGPoint(x: self.bounds.size.width - radius, y: FTDefaultMenuArrowHeight + radius),
                         radius: radius,
-                        startAngle: CGFloat(M_PI_2*3),
+                        startAngle: CGFloat(Double.pi*0.5*3),
                         endAngle: 0,
                         clockwise: true)
             path.addLine(to: CGPoint(x: self.bounds.size.width, y: self.bounds.size.height - radius))
             path.addArc(withCenter: CGPoint(x: self.bounds.size.width - radius, y: self.bounds.size.height - radius),
                         radius: radius,
                         startAngle: 0,
-                        endAngle: CGFloat(M_PI_2),
+                        endAngle: CGFloat(Double.pi*0.5),
                         clockwise: true)
             path.addLine(to: CGPoint(x: radius, y: self.bounds.size.height))
             path.addArc(withCenter: CGPoint(x: radius, y: self.bounds.size.height - radius),
                         radius: radius,
-                        startAngle: CGFloat(M_PI_2),
-                        endAngle: CGFloat(M_PI),
+                        startAngle: CGFloat(Double.pi*0.5),
+                        endAngle: CGFloat(Double.pi),
                         clockwise: true)
             path.addLine(to: CGPoint(x: 0, y: FTDefaultMenuArrowHeight + radius))
             path.addArc(withCenter: CGPoint(x: radius, y: FTDefaultMenuArrowHeight + radius),
                         radius: radius,
-                        startAngle: CGFloat(M_PI),
-                        endAngle: CGFloat(M_PI_2*3),
+                        startAngle: CGFloat(Double.pi),
+                        endAngle: CGFloat(Double.pi*0.5*3),
                         clockwise: true)
             path.close()
             //            path = UIBezierPath(roundedRect: CGRect.init(x: 0, y: FTDefaultMenuArrowHeight, width: self.bounds.size.width, height: self.bounds.height - FTDefaultMenuArrowHeight), cornerRadius: configuration.cornerRadius)
@@ -485,26 +484,26 @@ private class FTPopOverMenuView: UIControl {
             path.addLine(to: CGPoint(x: self.bounds.size.width - radius, y: self.bounds.size.height - FTDefaultMenuArrowHeight))
             path.addArc(withCenter: CGPoint(x: self.bounds.size.width - radius, y: self.bounds.size.height - FTDefaultMenuArrowHeight - radius),
                         radius: radius,
-                        startAngle: CGFloat(M_PI_2),
+                        startAngle: CGFloat(Double.pi*0.5),
                         endAngle: 0,
                         clockwise: false)
             path.addLine(to: CGPoint(x: self.bounds.size.width, y: radius))
             path.addArc(withCenter: CGPoint(x: self.bounds.size.width - radius, y: radius),
                         radius: radius,
                         startAngle: 0,
-                        endAngle: CGFloat(M_PI_2*3),
+                        endAngle: CGFloat(Double.pi*0.5*3),
                         clockwise: false)
             path.addLine(to: CGPoint(x: radius, y: 0))
             path.addArc(withCenter: CGPoint(x: radius, y: radius),
                         radius: radius,
-                        startAngle: CGFloat(M_PI_2*3),
-                        endAngle: CGFloat(M_PI),
+                        startAngle: CGFloat(Double.pi*0.5*3),
+                        endAngle: CGFloat(Double.pi),
                         clockwise: false)
             path.addLine(to: CGPoint(x: 0, y: self.bounds.size.height - FTDefaultMenuArrowHeight - radius))
             path.addArc(withCenter: CGPoint(x: radius, y: self.bounds.size.height - FTDefaultMenuArrowHeight - radius),
                         radius: radius,
-                        startAngle: CGFloat(M_PI),
-                        endAngle: CGFloat(M_PI_2),
+                        startAngle: CGFloat(Double.pi),
+                        endAngle: CGFloat(Double.pi*0.5),
                         clockwise: false)
             path.close()
             //            path = UIBezierPath(roundedRect: CGRect.init(x: 0, y: 0, width: self.bounds.size.width, height: self.bounds.height - FTDefaultMenuArrowHeight), cornerRadius: configuration.cornerRadius)

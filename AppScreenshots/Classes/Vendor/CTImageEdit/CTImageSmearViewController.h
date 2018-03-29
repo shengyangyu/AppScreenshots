@@ -17,7 +17,7 @@
 
 @interface CTImageSmearViewController : UIViewController
 
-@property (nonatomic, weak) id<CTImageSmearViewControllerDelegate> delegate;
+@property (nullable, nonatomic, weak) id<CTImageSmearViewControllerDelegate> delegate;
 
 - (instancetype _Nonnull)initWithImage:(UIImage * _Nonnull)image;
 
